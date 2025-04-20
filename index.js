@@ -6,12 +6,17 @@ function password(){
     kiy.textContent = "";
     for(i=0;i<9;i++){
     let m = Math.floor(Math.random()* characters.length)+1
-    hite.textContent += characters[m]
+    if(characters[m]!= undefined)
+    {
+        hite.textContent += characters[m]
     }
-    for(i=0;i<9;i++){
-        
+    }
+    for(i=0;i<9;i++){   
     let n = Math.floor(Math.random()* characters.length)+1
-    kiy.textContent += characters[n]
+    if(characters[n]!= undefined)
+    {
+        kiy.textContent += characters[n]
+    }
     }
 }
 // each password should be 15 charecters long
