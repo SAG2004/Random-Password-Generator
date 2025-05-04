@@ -1,6 +1,9 @@
 body{
     /* unpopulated-state */
-    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
         width: 550px;
         height: 550px;
         left: 62px;
